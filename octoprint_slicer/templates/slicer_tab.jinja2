@@ -116,6 +116,20 @@
                               <select data-bind="options: $data.optionsForKey('support'), value: $data['profile.support'], valueAllowUnset: false"></select>
                           </div>
                       </div>
+                      <div title="Filament diameter" class="input-append">
+                          <label class="control-label">Filament diameter</label>
+                          <div class="controls">
+                              <input data-bind="numericValue: $data['profile.filament_diameter']" type="number" tabindex="-1" min="1" step="0.005"></input>
+                              <span class="add-on">%</span>
+                          </div>
+                      </div>
+                      <div title="Filament flow" class="input-append">
+                          <label class="control-label">Filament flow</label>
+                          <div class="controls">
+                              <input data-bind="numericValue: $data['profile.filament_flow']" type="number" tabindex="-1" min="5" max="300" step="0.1"></input>
+                              <span class="add-on">mm</span>
+                          </div>
+                      </div>
                   </div>
               </div>
           </form>
